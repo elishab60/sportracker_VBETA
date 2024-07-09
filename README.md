@@ -1,3 +1,33 @@
+# installation 
+
+Cloner le dépot en local puis l'ouvrir sur l'IDE de votre choix (dans notre exemple VSCODE)
+
+Installer npm
+
+Lancer npm install afin d'installer tous les composants de package.json
+
+lancer le site avec npm start 
+
+⚠️⚠️⚠️ si le site d'affiche mal ⚠️⚠️⚠️
+
+Installer tailwindcss avec la commande : 
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+
+puis dans le fichier tailwind.config.js copier le code suivant : 
+
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
